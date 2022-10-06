@@ -32,7 +32,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
-  border: 1px solid tomato;
+  border: 1px solid transparent;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -113,6 +113,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 
   color: var(--title-text-color);
 
@@ -139,10 +140,152 @@
   margin-bottom: 90px;
 }
 
+.list.features {
+  display: flex;
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 
 .team {
   background-color: #F5F4FA
 }
+
+.features-img {
+  margin-bottom: 30px;
+  padding-top: 25px;
+padding-bottom: 25px;
+  display: block;
+
+  text-align: center;
+  background-color: #F5F4FA;
+}
+
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+.features-title {
+  margin-bottom: 10px;
+}
+
+.container.features .list {
+  display: flex;
+}
+
+.container.features .list:not(:last-child) {
+  margin-right: 30;
+}
+
+.container.team .list {
+  display: flex;
+  justify-content: center;
+}
+
+.container.team .item {
+  text-align: center;
+}
+
+.container.team h3 {
+ margin-top: 30px;
+ margin-bottom: 10px;
+}
+
+.container.team p {
+  margin-bottom: 16px;
+ }
+
+.container.team .item:not(:last-child) {
+margin-right: 30px;
+}
+
+.list.item-icons .item:not(:last-child) {
+  margin-right: 10;
+}
+
+.list.item-icons {
+  align-items: center;
+}
+
+.list.clients {
+  display: flex;
+  align-items: center;
+}
+
+.clients .item:not(:last-child) {
+  display: block;
+  margin-right: 30px;
+}
+
+.clients .item {
+  padding: 16px 32px;
+}
+
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.address-all {
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+color: var(--primary-text-color);
+}
+
+.address-all .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.address-all .link-address {
+  color: var(--fill-color);
+  text-decoration: none;
+}
+
+.logo.footer {
+  margin-bottom: 20px;
+}
+
+.address-all .address,
+.address-all .mail,
+.address-all .tel
+{
+  margin-bottom: 10px;
+}
+
+.footer-follow b {
+  display: block;
+  text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer-follow {
+  margin-left: 70px;
+}
+
+.sing {
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.footer p {
+ text-align: center;
+ margin: 0;
+ padding: 0;
+padding-bottom: 10px;}
+
+
+
+
 
 
 
@@ -201,6 +344,7 @@ h3 {
 .address .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  
 }
 
 .address.list {
@@ -269,10 +413,6 @@ b {
   color: #FFFFFF;
 }
 
-.footer p {
-  margin: 0;
-  padding: 0;
-}
 
 /* COLORS */
 /* 
