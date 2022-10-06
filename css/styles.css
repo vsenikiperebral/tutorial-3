@@ -63,9 +63,10 @@
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
-.nav-address {
+.container.nav-address {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -187,8 +188,8 @@ h3 {
   text-decoration: none;
   list-style: none;
   padding-left: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   display: block;
 }
